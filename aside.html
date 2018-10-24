@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>aside</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>	
+.aside{
+	width: 72px;
+	/*background-color: #fff;*/
+	position: fixed;
+	right: 0;
+	top: 300px;
+	color: #333;
+}
+.aside > ul .ad {
+	height: 150px;
+}
+.aside > ul > .liwu{
+	height: 82px;
+	width: 72px;
+	text-align: center;
+	padding: 14px 0;
+	font-size: 13px;
+	cursor: pointer;
+}
+.aside > ul > .liwu:hover{
+	color: #b4a078;
+}
+.aside > ul > .sml{
+	/*height: 82px;*/
+	width: 72px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-size: 12px;
+}
+.aside > ul > .sml > .redtext{
+	color: #BE4141;
+}
+.aside > ul > .read{
+	width: 72px;
+	height: 78px;
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.aside > ul > .read:hover{
+	color: #b4a078;
+}
+.aside > ul > .read:hover .tip{
+	display: block;
+}
+.aside .tip{
+	box-shadow: 0 2px 4px 0 #7f7f7f;
+	height: 268px;
+	position: absolute;
+	right: 74px;
+	top: -68px;
+	cursor: default;
+	line-height: 20px;
+	display: none;
+}
+.aside > .tip > .img{
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-size: 26px;
+	color: #FFF;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+.aside > ul > .kefu{
+	text-align: center;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	cursor: pointer;
+}
+.aside > ul > .kefu:hover{
+	color: #b4a078;
+}
+
+</style>
+</head>
+<body>
+	<div class="aside">
+		<ul>
+			<li class="ad">
+				<img src="./images/aside-ad.png" alt="">
+			</li>
+			<li class="liwu" >
+				<img src="./images/liwu2.png" alt="">
+				<p>新人有礼</p>
+			</li>
+			<li class="sml">
+				<img src="./images/saomaling.png" alt="">
+				<p>扫码领</p>
+				<p class="redtext">APP 1000元</p>
+				<p class="redtext">新人礼</p>
+			</li>
+			<li class="read">
+				<a href="#">订阅电子刊
+				<img src="./images/xinhao.png" alt=""></a>
+				<div class="tip">
+					<img src="./images/aside-ad2.png" alt="">
+					<p>严选生活美学</p>
+				</div>
+			</li>
+			<li class="kefu">
+				<img src="./images/sever_09.png" alt="">
+				<p>在线客服</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

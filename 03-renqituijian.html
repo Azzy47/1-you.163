@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人气推荐</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+.commonHeader{
+	margin: 30px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}.commonHeader h1{
+    line-height: 30px;
+    float: left;
+}
+.commonHeader > h1:hover{
+	color: #b4a078;
+}
+.commonHeader::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+	/*限时购*/
+	#xianshigou{
+		    display: inline-block;
+		    height: 20px;
+		    line-height: 20px;
+		    color: #fff;
+		    padding: 0 5px;
+		    font-size: 12px;
+		    background-color: #e36844;
+	}
+	/*爆品*/
+	#hots{
+		    display: inline-block;
+		    height: 20px;
+		    line-height: 20px;
+		    color: #fff;
+		    padding: 0 5px;
+		    font-size: 12px;
+		    background-color: #F28F2D;		
+	}
+	/*图片上的icon*/
+	#pro-desc{
+		    position: absolute;
+		    z-index: 3;
+		    height: 18px;
+		    font-size: 12px;
+		    color: #a7936e;
+		    border: 1px solid #b3a07d;
+		    border-radius: 5px;
+		    padding: 0 2px;
+		    line-height: 18px;
+		    background-color: #f4f0ea;
+		    margin: 10px;
+	}
+
+
+
+
+.commonHeader > .btns{
+	line-height: 28px;
+	height: 30px;
+	box-sizing: border-box;
+}
+.commonHeader > .btns::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+.commonHeader > .btns > *:hover{
+	color: #b4a078;
+	/*text-decoration-line: underline;*/
+	border-bottom: 2px solid#b4a078;
+	color: #b4a078;
+}
+.commonHeader > .btns > *{
+	margin: 0 25px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.w{
+	width: 1090px;
+	margin: 0 auto;
+}
+.renqituijian{
+	background-color: #f4f0ea;
+	margin: 2em auto;
+	padding: 30px 0;
+	box-sizing: border-box;
+}
+.renqituijian::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ .manufactureList2 > li{
+	background-color: #ffffff;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+ .manufactureList2 > li:nth-child(2),
+ .manufactureList2 > li:nth-child(3),
+ .manufactureList2 > li:nth-child(4){
+	margin-bottom: 10px;
+}
+ .manufactureList2 > li:nth-child(4),
+ .manufactureList2 > li:nth-child(7){
+	margin-right: 0;
+}
+ .manufactureList2 > li:first-child {
+	width: 400px;
+	height: 530px;
+	/*text-align: center;*/
+}
+.manufactureList2 > .pro > .desc{
+	margin-top: 2%;
+}
+.manufactureList2 > .pro > .desc > .price > .currentPrice{
+	color: #e36844;
+	font-size: 16px;
+}
+.manufactureList2 > .pro > .desc > .price > .counterPrice{
+	margin-left: 2px;
+	font-size: 12px;
+	text-decoration: line-through;
+	color: #999;
+}
+ .manufactureList2 > li:first-child ~ li{
+	width: 220px;
+	height: 260px;
+}
+
+.manufactureList2 > .pro > .img{
+	border-bottom: 1px solid #f4f0ea;
+	position: relative;
+}
+	.manufactureList2 > .pro > .img > img{
+		width: 100%;
+		transition: transform 1s;
+	}
+	.manufactureList2 > .pro:hover > .img > img{
+		transform: scale(1.1);
+	}
+
+	.manufactureList2 > .pro > .desc > .name{
+		margin: 12px 0;
+		font-size: 16px;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	.manufactureList2 > .pro > .desc > .name:hover{
+		color: #b4a078;
+	}
+	.manufactureList2 > .pro > .desc > .discounts{
+		height: 20px;
+		line-height: 20px;
+	}
+
+
+
+/*右边的六个*/
+.manufactureList2 > .pro > .img1{
+	border-bottom: 1px solid #f4f0ea;
+	position: relative;
+	overflow: hidden;
+
+}
+.manufactureList2 > .pro > .img1 > img{
+		width: 100%;
+		transition: transform 1s;
+		width: 180px;
+		height: 180px;
+}
+.manufactureList2 > .pro:hover > .img1 > img{
+		transform: scale(1.1);
+}
+.manufactureList2 > .pro > .desc1{
+	margin-top: 2%;
+}
+.manufactureList2 > .pro > .desc1 > .price > .currentPrice{
+	color: #e36844;
+	font-size: 13px;
+}
+.manufactureList2 > .pro > .desc1 > .price > .counterPrice{
+	margin-left: 2px;
+	font-size: 13px;
+	text-decoration: line-through;
+	color: #999;
+}
+	.manufactureList2 > .pro > .desc1 > .name{
+		/*margin: 12px 0;*/
+		font-size: 14px;
+		font-weight: 700;
+		cursor: pointer;
+	}
+	.manufactureList2 > .pro > .desc1 > .name:hover{
+		color: #b4a078;
+	}
+	.manufactureList2 > .pro > .desc1 > .discounts{
+		height: 20px;
+		line-height: 20px;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="renqituijian">
+			<div class="w">
+				<div class="commonHeader">
+					<h1 href="">人气推荐</h1>
+					<div class="btns">
+						<div class="btn rec">编辑推荐</div>
+						<div class="btn top">热销总榜</div>
+					</div>
+				</div>
+				<ul class="manufactureList2">
+					<li class="pro">
+						<div class="img">
+							<div id="pro-desc">8色可选</div>
+							<img src="./images/xinglixiang.png" alt="">
+						</div>
+						<ul class="desc">
+							<div class="discounts">
+								<li id="xianshigou">限时购</li>
+								<li id="xianshigou">满额减</li>
+							</div>
+							<li class="name">20寸全铝镁合金登机箱</li>
+							<li class="price"><span class="currentPrice">￥699</span><span class="counterPrice">￥919</span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<div id="pro-desc">马来西亚直采</div>
+							<img src="./images/yanwo.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts"></div>
+							<li class="name">马来西亚 洁净燕窝（燕盏）</li>
+							<li class="price"><span class="currentPrice">￥428</span><span class="counterPrice"></span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<div id="pro-desc">9色可选</div>
+							<img src="./images/24cun.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts">
+								<div id="xianshigou">限时购</div>
+							</div>
+							<li class="name">24寸 纯PC"铝框（非全...</li>
+							<li class="price"><span class="currentPrice">￥350.1</span>￥389<span class="counterPrice"></span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<!-- <div id="pro-desc"></div> -->
+							<img src="./images/chuangdian.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts">
+								<div id="hots">爆品</div>
+							</div>
+							<li class="name">AB面独立弹簧床垫 进口乳胶</li>
+							<li class="price"><span class="currentPrice">￥2599</span><span class="counterPrice"></span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<div id="pro-desc">5色可选</div>
+							<img src="./images/sijiantao.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts">
+								<div id="hots">爆品</div>
+								<div id="xianshigou">七夕礼物价</div>
+							</div>
+							<li class="name"> 全棉针织条纹四件套 新款</li>
+							<li class="price"><span class="currentPrice">￥428</span><span class="counterPrice"></span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<!-- <div id="pro-desc"></div> -->
+							<img src="./images/qichezuodian.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts">
+								<div id="hots">爆品</div>
+								<div id="xianshigou">满额减</div>
+							</div>
+							<li class="name">汽车座垫</li>
+							<li class="price"><span class="currentPrice">￥239.2</span><span class="counterPrice">￥229</span></li>
+						</ul>
+					</li>
+					<li class="pro">
+						<div class="img1">
+							<div id="pro-desc">新品</div>
+							<img src="./images/diandongyashua.png" alt="">
+						</div>
+						<ul class="desc1">
+							<div class="discounts">
+								<div id="xianshigou">七夕礼物价</div>
+							</div>
+							<li class="name">电动牙刷</li>
+							<li class="price"><span class="currentPrice">￥199</span><span class="counterPrice"></span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+</body>
+</html>

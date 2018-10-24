@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新品首发</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+.xinpinshoufa{
+	width: 1090px;
+	margin: 0 auto;
+}
+.commonHeader{
+	margin: 2px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.xinpinshoufa::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.commonHeader h1{
+    line-height: 30px;
+    float: left;
+}
+.commonHeader > h1:hover{
+	color: #b4a078;
+}
+.commonHeader::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.commonHeader .small-h {
+	font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.commonHeader > .more{
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+}
+.commonHeader > .more:hover{
+	color: #b4a078;
+}
+.manufactureList1::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList1 > li{
+	/*border: 1px solid #ccc;*/
+	width: 265px;
+	float: left;
+}
+		.newPro {
+			width: 265px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.newPro > .photo {
+			height: 265px;
+		}
+		.newPro > .photo > li:nth-child(2){
+			position: absolute;
+			top: 0;
+			opacity: 0;
+		}
+		.newPro:hover > .photo >li:nth-child(2){
+			opacity: 1;
+		}
+		.newPro:hover > .description {
+			background-color: chocolate;
+		}
+		.newPro:hover {
+			box-shadow: 0 0 4px #ccc;
+		}
+		.manufactureList1 > .newPro > .text{
+			    text-align: center;
+
+		}
+		.manufactureList1 > .newPro > .text > .icon{
+			height: 30px;
+			/*color: #fff;*/
+			width: 200px;
+			margin: 0 auto 3px;
+			overflow: hidden;
+		}
+		.manufactureList1 > .newPro > .text > .price{
+			color: red;
+			font-size: 12px;
+		}
+		.manufactureList1 > .newPro > .text > .icon > .tag{
+			    background-color: #F28F2D;
+			    font-size: 12px;
+			    margin: 5px 40%;
+			    padding: 2px;
+			    width: 60px;
+		}
+</style>
+</head>
+<body>
+	<div class="xinpinshoufa">
+				<div class="commonHeader">
+						<h1 href="">新品首发</h1>
+						<small class="small-h">工厂直达消费者，剔除品牌溢价</small>
+						<a class="more">更多制造商 &gt; </a>
+				</div>
+				<ul class="manufactureList1">
+					<li class="newPro">
+						<ul class="photo">
+							<li><a href=""><img src="./images/xianglian2.png" alt="rze"></a></li>
+							<li><a href=""><img src="./images/xianglian1.png" alt="rze"></a></li>
+						</ul>
+						<div class="text">
+							<div class="icon"><p class="tag">七夕推荐</p></div>
+							<div class="desc">牵绊永恒 双环镀金项链</div>
+							<div class="price">￥359</div>
+						</div>
+					</li>
+					<li class="newPro">
+						<ul class="photo">
+							<li><a href=""><img src="./images/shoulian1.png" alt="rze"></a></li>
+							<li><a href=""><img src="./images/shoulian2.png" alt="rze"></a></li>
+						</ul>
+						<div class="text">
+							<div class="icon"><p class="tag">七夕推荐</p></div>
+							<div class="desc">韩国设计 14K双环镀金手链</div>
+							<div class="price">￥229</div>
+						</div>
+					</li>
+					<li class="newPro">
+						<ul class="photo">
+							<li><a href=""><img src="./images/rose1.png" alt="rze"></a></li>
+							<li><a href=""><img src="./images/rose2.png" alt="rze"></a></li>
+						</ul>
+						<div class="text">
+							<div class="icon"><p class="tag">七夕推荐</p></div>
+							<div class="desc">唉浸晨昏 玫瑰花束</div>
+							<div class="price">￥109</div>
+						</div>
+					</li>
+					<li class="newPro">
+						<ul class="photo">
+							<li><a href=""><img src="./images/erji1.png" alt="rze"></a></li>
+							<li><a href=""><img src="./images/erji2.jpg" alt="rze"></a></li>
+						</ul>
+						<div class="text">
+							<p></p>
+							<div class="icon"></div>
+							<div class="desc">网易智造X1舒蓝牙耳机</div>
+							<div class="price">￥79</div>
+						</div>
+					</li>
+				</ul>
+		</div>
+</body>
+</html>

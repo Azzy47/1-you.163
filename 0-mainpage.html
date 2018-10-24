@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动元素</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+		.w {
+			width: 1090px;
+			margin: 0 auto;
+		}
+		/*-------头部黑色部分-------*/
+.black-h{
+	background-color: #666;
+	padding: 1px 0;
+}
+/*.setNav{
+	font-size: 12px;
+	line-height: 2em;
+	cursor: pointer;
+}*/
+.setNav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.setNav > li > a{
+	color: lightgray;
+}
+.setNav > li{
+	margin: 1em 0;
+	float: left;
+	width: 100px;
+	line-height: 1.5em;
+	text-align: center;
+	border-right: 1px solid #fff;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	color: #ccc;
+}
+.setNav > li > a:hover{
+	color: #fff;
+}
+/*-------头部白色部分---------*/
+.white-h{
+}
+.wy-logo{
+	position: relative;
+	top: 50px;
+	left: 455px;
+	width: 180px;
+	height: 60px;
+	margin-bottom: 50px;
+}
+		.main-nav::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.main-nav > li:hover > a{
+/*鼠标悬浮时main-nav中菜单项的下划线*/
+	border-bottom: 3px solid #b4a078;
+	color: #b4a078;
+}
+		.main-nav > li {
+			float:left;
+			width: 80px;
+			text-align: center;
+			line-height: 3em;
+		}
+		.main-nav > li:hover > a {
+			color: #b4a078;
+		}
+		.main-nav > li:hover > a::after {
+			display: block;
+		}
+		.main-nav > li:hover > .sub-nav{
+			display: block;
+		}
+		.sub-nav {
+			position: absolute;
+			background-color: #ffffff;
+			width: 100%;
+			left: 0;
+			text-align: left;
+			display: none;
+		}
+		.sub-nav > ul {
+			width: 1090px;
+			margin:10px auto;
+		}
+		.sub-nav >  ul > li{
+			vertical-align: middle;
+			margin: 10px 20px 30px 30px;
+			float: left;
+			width: 44px;
+		}
+		.sub-nav > ul > li > a > img{
+			height: 44px;
+			width: 44px;
+			vertical-align: top;
+		}
+		#icon-desc{
+			font-size: 14px;
+			line-height: 1;
+			width: 100px;
+			padding-top: 10px;
+			border: 0;
+			/*margin-left: -28px;*/
+		}
+		.sub-nav > ul > li:hover > a{
+			color: #b4a078;
+			/*padding-top: 10px;
+			margin-left: 28px;*/
+		}
+		.banner-1 {
+			background-color: #fee59a;
+			height: 420px;
+		}
+		.products {
+			width: 1090px;
+			margin: 1em auto;
+		}
+		.products > ul::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.products > ul > li{
+			height: 320px;
+			width: 360px;
+			float: left;
+			margin-right: 5px;
+		}
+		.products > ul > li:nth-child(1){
+			background-color: #f5efec;
+		}
+		.products > ul > li:nth-child(2){
+			background-color: #f3fafb;
+		}
+		.products > ul > li:nth-child(3){
+			margin-right: 0;
+			background-color: #e6f0ec;
+		}
+
+		.products2 {
+			background-color: #f4f0ea;
+			margin: 1em 0;
+			padding-bottom: 40px;
+		}
+		.products2 > .wrap {
+			width: 1090px;
+			margin: 0 auto;
+		}
+		.products2 ul::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.products2 ul > li {
+			float: left;
+			background-color: #ffffff;
+			margin-right: 10px;
+		}
+		.products2 ul > li:nth-child(2),
+		.products2 ul > li:nth-child(3),
+		.products2 ul > li:nth-child(4) {
+			margin-bottom: 10px;
+		}
+		.products2 ul > li:nth-child(4),
+		.products2 ul > li:nth-child(7){
+			margin-right: 0;
+		}
+
+		.products2 ul > li:first-child {
+			width: 400px;
+			height: 530px;
+		}
+		.products2 ul > li:first-child ~ li {
+			width: 220px;
+			height: 260px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="black-h">
+				<div class="w">
+					<div class="text"></div>
+					<ul class="setNav">
+						<li><a href="#">登录&nbsp;&nbsp;注册</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">会员</a></li>
+						<li><a href="#">甄选家</a></li>
+					</ul>
+				</div></div>
+			<div class="white h">
+				<div class="w">
+					<img class="wy-logo" src="./images/yanxuan-logo.png">
+					<ul class="main-nav">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">居家</a>
+							<div class="sub-nav">
+									<ul>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/xlx.png">
+												<p id="icon-desc">行李箱</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/xl.png">
+												<p id="icon-desc">夏凉</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/cpjt.png">
+												<p id="icon-desc">床品件套</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/dj.png">
+												<p id="icon-desc">灯具</p>
+											</a id="icon-desc">
+										</li class="item" style="margin-right:102px;">
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/sn.png">
+												<p id="icon-desc">收纳</p>
+											</a id="icon-desc">
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/lscw.png">
+												<p id="icon-desc">晾晒除味</p>
+											</a id="icon-desc">
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/jj.png">
+												<p id="icon-desc">家具</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/bz.png">
+												<p id="icon-desc">被枕</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/byrz.png">
+												<p id="icon-desc">布艺软装</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/js.png">
+												<p id="icon-desc">家饰</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/lxyp.png">
+												<p id="icon-desc">旅行用品</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/jtyl.png">
+												<p id="icon-desc">家庭医疗</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+									   		<a href="#">
+												<img src="./images/cw.png">
+												<p id="icon-desc">宠物</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">鞋包配饰</a>
+							<div class="sub-nav">
+									<ul>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/xlx.png">
+												<p id="icon-desc">行李箱</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvsbd.png">
+												<p id="icon-desc">女式包袋</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+										    <a href="#">
+												<img src="./images/nansbd.png">
+												<p id="icon-desc">男士包袋</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/qbjxpj.png">
+												<p id="icon-desc">钱包及小皮件</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvx.png">
+												<p id="icon-desc">女鞋</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nanx.png">
+												<p id="icon-desc">男鞋</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/wjtj.png">
+												<p id="icon-desc">围巾件套</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/tuoxie.png">
+												<p  id="icon-desc">拖鞋</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/xiepei.png">
+												<p  id="icon-desc">鞋配</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/wazi.png">
+												<p  id="icon-desc">袜子</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/siwa.png">
+												<p id="icon-desc">丝袜</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/peishi.png">
+												<p id="icon-desc">配饰</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/yanjing.png">
+												<p id="icon-desc">眼镜</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">服装</a>
+							<div class="sub-nav">
+									<ul>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/qyd.png">
+												<p id="icon-desc">Yessing轻运动</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/tx.png">
+												<p id="icon-desc">T恤</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/yundong.png">
+												<p id="icon-desc">运动</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nz.png">
+												<p id="icon-desc">牛仔</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvssz.png">
+												<p id="icon-desc">女装上装</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvswt.png">
+												<p id="icon-desc">女士外套</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvsxz.png">
+												<p id="icon-desc">女士下装</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nanswt.png">
+												<p id="icon-desc">男士外套</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nansxz.png">
+												<p id="icon-desc">男士下装</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nanssz.png">
+												<p id="icon-desc">男士上装</p>
+											</a>
+										</li>
+										<li class="item" style="margin-right:102px;">
+											<a href="#">
+												<img src="./images/nvsjjf.png">
+												<p id="icon-desc">女士家居服</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">电器</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">洗护</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+											<img src="./images/tx.png">
+												<p>T恤</p>
+											</a></li>
+										<li><a href="#">
+											<img src="./images/tx.png">
+												<p>T恤</p>
+											</a></li>
+									</ul>
+							</div></li>
+						<li><a href="#">饮食</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">餐厨</a>
+							<div class="sub-nav">
+									<ul>
+										<li>
+											<a href="#">水具杯壶</a>
+										</li>
+										<li>
+											<a href="#">餐具</a>
+										</li>
+										<li>
+											<a href="#">锅具</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">婴童</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">文体</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">特色区</a>
+							<div class="sub-nav">
+									<ul>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+										<li><a href="#">
+												<img src="./images/tx.png">
+												<p>T恤</p>
+											</a>
+										</li>
+									</ul>
+							</div></li>
+						<li><a href="#">为你严选</a></li>
+						<li><a href="#">众筹</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="banner-1">
+			
+		</div>
+		<!-- 1090 = 5*2+360*3 -->
+		<div class="products">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 400 + 10*3 220*2 -->
+		<div class="products2">
+			<div class="wrap">
+				<div>
+					<h2>人气推荐</h2>
+				</div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			
+		</div>
+
+	</div>
+</body>
+</html>

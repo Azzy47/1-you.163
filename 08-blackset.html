@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>头部1</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+.w{
+	width: 1090px;
+	margin: 0 auto;
+}
+.w::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.black-h{
+	position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+    z-index: 4;
+}
+.setNav-l{
+	/*float: left;*/
+	position: relative;
+	color: #ccc;
+	height: 1em;
+}
+.setNav-r{
+	right: 0;
+	position: absolute;
+}
+.setNav-r::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header > .black-h > .w{
+	position: relative;
+}
+.header > .black-h > .w > * {
+	float: left;
+}
+.setNav-r > li > a{
+	color: lightgray;
+}
+.setNav-r > li::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.setNav-r > li{
+	bottom: 0;
+	margin: 1em 0;
+	float: left;
+	width: 100px;
+	line-height: 1em;
+	text-align: center;
+	border-right: 1px solid #fff;
+	margin-left: 10px;
+	position: relative;
+	color: #ccc;
+}
+.setNav-r > li > a:hover{
+	color: #fff;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<!-- <div class="w"> -->
+			<div class="black-h">
+				<div class="w">
+					<div class="setNav-l">
+						好的生活，没那么贵
+					</div>
+					<ul class="setNav-r">
+						<li><a href="#">登录&nbsp;&nbsp;注册</a><i>|</i></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">会员</a></li>
+						<li><a href="#">甄选家</a></li>
+					</ul>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+
+</body>
+</html>

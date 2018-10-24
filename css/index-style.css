@@ -1,0 +1,417 @@
+/*----------------复用wrap-----------------*/
+.w{
+	width: 1090px;
+	margin: 0 auto;
+	position: relative;
+	background-color: lightgray;
+}
+.product-w{
+	width: 100%;
+}
+.product-w > .
+
+/*---------------头部----------------------*/
+.header{
+}
+/*-------头部黑色部分-------*/
+.black-h{
+	background-color: #666;
+	padding: 1px 0;
+}
+.setNav{
+	font-size: 12px;
+	line-height: 36px;
+	cursor: pointer;
+}
+.setNav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.setNav > li{
+	float: left;
+	width: 120px;
+	line-height: 1.5em;
+	text-align: center;
+	border-right: 1px solid #fff;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	color: #ccc;
+}
+.setNav > li > a {
+	color: #fff;
+}
+/*-------头部白色部分---------*/
+.white-h{
+}
+.wy-logo{
+	position: relative;
+	top: 50px;
+	left: 455px;
+	width: 180px;
+	height: 60px;
+}
+/*---导航栏--*/
+.main-nav{
+	line-height: 1;
+	font-weight: 700;
+	height: 30px;
+	bottom: 21px;
+	width: 100%;
+	margin-top: 100px;
+}
+/*---*/
+.main-nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.main-nav > li{
+	float: left;
+	margin-top: 6px;
+	margin-left: auto;
+	padding: 0 24px;
+	font-size: 14px;
+}
+.main-nav > li > a{
+	padding-bottom: 6px;
+	color: #333;
+	display: block;
+}
+.main-nav >li >a::after{
+	content: "";
+	height: 2px;
+	background-color: #b4a078;
+	width: 2em;
+	margin: 0 auto;
+	position: relative;
+	top: -0.5px;
+	display: none;
+}
+.main-nav > li:hover > a{
+/*鼠标悬浮时main-nav中菜单项的下划线*/
+	border-bottom: 3px solid #b4a078;
+	color: #b4a078;
+}
+.main-nav > li:hover > a::after{
+	display: block;
+}
+.main-nav > li:hover > .sub-nav{
+/*主菜单中每一项添加鼠标悬浮出现sub-nav*/
+	display: block;
+}
+/*-------子菜单-------*/
+.sub-nav{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	/*padding-left: 50%;*/
+	top: 200px;
+	display: none;
+}
+.sub-nav > .sub-nav-wrap{
+	position: relative;
+    padding-top: 33px;
+    background-color: yellow;
+    text-align: center;
+}
+.subnav-w{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	background-color: pink;
+}
+.subnav-w > li{
+	vertical-align: middle;
+	margin-bottom: 30px;
+	float: left;
+	width: 44px;
+}
+.subnav-w > .li > .a > img{
+	height: 44px;
+	width: 44px;
+	vertical-align: top;
+}
+#icon-desc{
+	font-size: 14px;
+	line-height: 1;
+	width: 100px;
+	padding-top: 10px;
+	border: 0;
+	/*margin-left: -28px;*/
+}
+.subnav-w > li:hover > a{
+	color: #b4a078;
+}
+/*---------------main----------------------*/
+
+/*---------------底部----------------------*/
+/*.header{
+	width: 100%;
+}
+.header > .set-nav{
+	position: relative;
+	height: 36px;
+	line-height: 36px;
+	background-color: #333;
+	z-index: 4;
+}
+.header > .set.nav > .set-nav-wrap{
+	width: 1090px;
+	margin: 0 auto;
+	position: absolute;
+}
+/*.set-nav-wrap::after{
+	content: "";
+	display: table;
+}*/
+.header > .set.nav > .set-nav-wrap .wrap-l{
+	float: left;
+}
+.header > .set.nav > .set-nav-wrap . wrap-r{
+	float: right;
+}
+.header > .header-wrap{
+	width: 1090px;
+	margin: 0 auto;
+	position: relative;
+}
+.header > .header-wrap > .img{
+	position: absolute;
+	top: 50px;
+	left: 455px;
+	width: 180px;
+	height: 60px;
+}
+.header > .header-wrap > .nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header > .header-wrap > .nav{
+	line-height: 1;
+	font-weight: 700;
+	position: absolute;
+	height: 30px;
+	bottom: 21px;
+	width: 100%;
+}
+.header > .header-wrap > .nav > li{
+	float: left;
+	margin-top: 6px;
+	margin-left: auto;
+	padding: 0 24px;
+	font-size: 14px;
+}
+.header > .header-wrap > .nav > li > a{
+	padding-bottom: 6px;
+	color: #333;
+	display: block;
+}
+.header > .header-wrap > .nav >li >a::after{
+	content: "";
+	display: block;
+	height: 2px;
+	color: #b4a078;
+	width: 2em;
+	margin: 0 auto;
+	position: relative;
+	display: none;
+}
+.header > .header-wrap > .nav > li:hover > a{
+	border-bottom: 3px solid #b4a078;
+	color: #b4a078;
+}
+/*主菜单中每一项添加鼠标悬浮出现sub-nav*/
+.header > .header-wrap > .nav > li:hover > a::after{
+	display: block;
+}
+.header > .header-wrap > .nav > li:hover > .sub-nav{
+	display: block;
+}
+.sub-nav{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	/*padding-left: 50%;*/
+	top: 30px;
+	display: none;
+}
+.sub-nav > .sub-nav-wrap{
+	position: relative;
+    padding-top: 33px;
+    background-color: #fff;
+    text-align: center;
+}
+.sub-nav > .sub-nav-wrap> ul{
+	/*display: inline-block;*/
+	display: inline-block;
+	width: 930px;
+}
+.sub-nav > .sub-nav-wrap > ul > li{
+	vertical-align: middle;
+	margin-bottom: 30px;
+	float: left;
+	width: 44px;
+}
+.sub-nav-wrap > .ul > .li > .a > img{
+	height: 44px;
+	width: 44px;
+	vertical-align: top;
+}
+#icon-desc{
+	font-size: 14px;
+	line-height: 1;
+	width: 100px;
+	padding-top: 10px;
+	border: 0;
+	margin-left: -28px;
+}
+.sub-nav-wrap > ul > li:hover > a{
+	color: #b4a078;
+	/*padding-top: 10px;
+	margin-left: 28px;*/
+}*/
+
+
+
+
+
+
+
+
+/*---------------footer-------------*/
+.footer > .white-footer{
+	padding-top: 60px;
+	padding-bottom: 34px;
+	background-color: #fff;
+	border-top: 1px solid #e8e8e8;
+}
+.footer > .white-footer > .white-w{
+	width: 1090px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fff;
+}
+.footer > .white-footer > .white-w > .inner{
+	width: 33.33333%;
+    height: 204px;
+    float: left;
+    border-left: 1px solid #e9e9e9;
+    text-align: center;
+}
+.footer > .white-footer > .white-w > .inner > .msg{
+	font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    line-height: 1;
+}
+.footer > .white-footer > .white-w > .inner > .btnDesc{
+	margin-top: 10px;
+}
+.footer > .white-footer > .white-w > .inner:nth-child(1){
+	border-left: none;
+}
+.footer > .white-footer > .white-w > .inner > .button{
+	width: 80px;
+	height: 100px;
+	font-size: 14px;
+	/*background-color: #fff;*/
+	padding-top: 25px;
+	text-align: center;
+	border: 1px solid #E8E8E8;
+	display: inline-block;
+}
+.footer > .white-footer > .white-w > .inner > .fb{
+	margin-left: 29px;
+}
+.footer > .white-footer > .white-w > .inner > .imgfd{
+	background-position: 0 -98px;
+	height: 27px;
+	width: 38px;
+}
+/*.button kefu{
+
+}*/
+.footer > .black-footer{
+	height: 204px;
+	padding-top: 37px;
+	background-color: #464547;
+}
+.white-w > a{
+	border: 1px solid #464547;
+}
+.black-footer > .black-w{
+	width: 1090px;
+	margin: 0 auto;
+	position: relative;
+}
+.black-footer > .black-w > .ensure{
+	margin-bottom: 10px !important;
+}
+.black-footer > .black-w > .ensure > .item > .inner{
+	color: #fff;
+	font-size: 18px;
+	line-height: 51px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.black-footer > .black-w > .ensure > .item > .inner::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.black-footer > .black-w > .ensure > .item > .inner > .descText{
+	float: right;
+	margin-left: 17px;
+}
+.black-footer > .black-w > .ensure::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.black-footer > .black-w > .ensure > .item{
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+.black-footer > .black-w > ul > img{
+	margin-right: 17px;
+}
+.black-footer > .black-w > .ensure > .descText{
+	float: left;
+}
+.footer > .black-footer > .black-w > .hr{
+	height: 1px;
+	margin-bottom: 27px;
+	background-color: #4f4f4f;
+	border: 0;
+}.footer > .black-footer > .black-w >.setinfo{
+	text-align: center;
+	color: #999;
+	position: relative;
+}
+/*.footer > .black-footer > .black-w >.setinfo p{
+	text-align: center;
+	color: #999;
+}*/
+.footer > .black-footer > .black-w >.setinfo > .nav{
+	box-sizing: border-box;
+}
+.footer > .black-footer > .black-w >.setinfo > .wj{
+	display: block;
+	width: 36px;
+	position: absolute;
+	right: 7px;
+	top: -4px;
+}
+.footer > .black-footer > .black-w >.setinfo > .wj img{
+	width: 100%;
+}
+.footer > .black-footer > .black-w > .setinfo > .nav > .navText{
+	color: #999;
+}
+.footer > .black-footer > .black-w > .setinfo > .nav > .split{
+	margin: auto 13px;
+}

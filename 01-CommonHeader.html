@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公共标题</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+	a{
+		text-decoration: none;
+	}
+.w{
+	width: 1090px;
+	margin: 0 auto;
+}
+.commonHeader{
+	background-color: pink;
+	vertical-align: middle;
+	padding: 10px;
+	line-height: 40px;
+	height: 40px;
+}
+.commonHeader::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.commonHeader > *{
+	line-height: 40px;
+	height: 40px;	
+}
+.commonHeader h3{
+    float: left;
+}
+.commonHeader > h3:hover{
+	color: #b4a078;
+}
+.commonHeader .frontName {
+	top: -20px;
+	text-align: right;
+		line-height: 40px;
+	height: 40px;
+}
+.commonHeader > .more{
+    /*text-align: right;*/
+    cursor: pointer;
+}
+.commonHeader a:hover{
+	color: #b4a078;
+}
+</style>
+</head>
+<body>
+	<div class="w">
+		<div class="commonHeader">
+			<h3 class="main" href="">品牌制造商</h3>
+			<p class="frontName l">工厂直达消费者，剔除品牌溢价</p>
+			<a class="frontNaame more">更多制造商</a>
+		</div>
+	</div>
+</body>
+</html>

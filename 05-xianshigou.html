@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>限时购</title>
+	<link rel="stylesheet" href="./css/component.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+.commonHeader{
+	margin: 2px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.commonHeader h1{
+    line-height: 30px;
+    float: left;
+}
+.commonHeader > h1:hover{
+	color: #b4a078;
+}
+.commonHeader::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.commonHeader > .more{
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+}
+.commonHeader > .more:hover{
+	color: #b4a078;
+}
+/*以上是复用的标题头部（局部）*/
+
+
+
+
+.xianshigou{
+	width: 1090px;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.manufactureList3 > .ad{
+	box-sizing: border-box;
+	padding-top: 60px;
+	width: 225px;
+	height: 380px;
+	float: left;
+	background: url(./images/xsg-ad.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.manufactureList3 > .ad > .title2{
+	font-size: 26px;
+	font-weight: 500;
+}
+.manufactureList3 > .ad > .line-20{
+	width: 20px;
+	height: 2px;
+	background-color: #61594b;
+	margin: 1em auto;
+}
+.font14{
+	font-size: 14px;	
+}
+.font16{
+	font-size: 16px;
+}
+.manufactureList3 > .ad > .times{
+	margin: 20px auto 50px;
+	width: 148px;
+}
+.manufactureList3 > .ad > .times::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList3 > .ad > .all-btn{
+	padding: .5em 1.5em;
+	border-radius: 1em;
+	background-color: #a7936e;
+	color:#ffffff;
+	display: inline;
+	cursor: pointer;
+}
+.manufactureList3 > .pro{
+	box-sizing: border-box;
+	height: 380px;
+	margin-left: 224px;
+	width: 866px;
+	border-top: 1px solid #ccc;
+	cursor: pointer;
+}
+.manufactureList3 > .pro > li{
+	box-sizing: border-box;
+	float: left;
+	width: 432.5px;
+	height: 190px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.manufactureList3 > .pro > li::after{
+	content: "";
+	display: block;
+	clear: both;		
+}
+.manufactureList3 > .ad > .times > li > span {
+	position: absolute;
+	right: -14px;
+	width: 14px;
+	color: #61594b;
+}
+.manufactureList3 > .ad > .times > li {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #61594b;
+	margin-right: 14px;
+	border-radius: 2px;
+	color: #ffffff;
+	line-height: 40px;
+	position: relative;
+}
+.manufactureList3 > .ad .times > li:last-child {
+	margin-right: 0;
+}
+.manufactureList3 > .pro > li > .item-picture{
+	width: 190px;
+	height: 100%;
+	float: left;
+}
+.manufactureList3 > .pro > li > .item-picture > img{
+	width: 100%;
+	transition: transform 1s;
+}
+.manufactureList3 > .pro > li:hover > .item-picture img{
+	transform:scale(1.1);
+} 
+.manufactureList3 > .pro > li > .item-info{
+	margin-left: 190px;
+	height: 100%;
+	padding:1em;
+}
+.manufactureList3 > .pro > li > .item-info > * {
+	margin: .2em 0;
+}
+.manufactureList3 > .pro > li > .item-info > .ellipsis{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.manufactureList3 > .pro > li > .item-info > .price{
+	line-height: 24px;
+	height: 24px;
+}
+.manufactureList3 > .pro > li > .item-info > .price::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList3 > .pro > li > .item-info > .price > .xsj{
+	color: #be4141;
+	font-size: 14px;
+	float: left;
+	margin-right: 10px;
+}
+.manufactureList3 > .pro > li > .item-info > .price > .xsj > span{
+	color: #be4141;
+	font-weight: 700;
+	font-size: 20px;
+}
+.manufactureList3 > .pro > li > .item-info > .price > .yj{
+	color: #999;
+}
+.manufactureList3 > .pro > li > .item-info > .price > .yj > .oriPrice{
+	text-decoration: line-through;
+}
+#buyBtn{
+    display: block;
+    width: 118px;
+    height: 31px;
+    margin-top: 18px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #be4141;
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+	<div class="xianshigou">
+		<div class="commonHeader">
+			<h1 href="">限时购</h1>
+			<a class="more">更多抢购</a>
+		</div>
+		<div class="manufactureList3">
+			<div class="ad">
+				<h1 class="title2">18点场</h1>
+				<div class="line-20"></div>
+				<p class="font16">距离结束还有</p>
+				<ul class="times">
+					<li>14 <span>:</span></li>
+					<li>2 <span>:</span></li>
+					<li>3</li>
+				</ul>
+				<div class="all-btn">查看全部 &gt; </div>
+			</div>
+			<ul class="pro">
+				<li>
+					<div class="item-picture">
+						<img src="./images/fsxlx.png" alt="">
+					</div>
+					<div class="item-info">
+						<div class="font16 ellipsis">网易制造太空舱,网易制造太空舱,网易制造太空舱</div>
+						<p>3D环绕音响</p>
+						<ul style="text-align: center; height: 10px; line-height: 10px; margin :12px 0;">
+							<li>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</li>
+							<li>还剩216件</li>
+						</ul>
+						<div class="price">
+							<p class="xsj">限时价<span class="curPrice">￥118.3</span></p>
+							<p class="yj">原价<span class="oriPrice">￥169</span></p>
+						</div>
+						<div id="buyBtn">立即抢购</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-picture">
+						<img src="./images/zhenxin.png" alt="">
+					</div>
+					<div class="item-info">
+						<div class="font16 ellipsis">网易制造枕芯 网易制造枕芯 网易制造枕芯</div>
+						<p>网易制造枕芯</p>
+						<ul style="text-align: center; height: 10px; line-height: 10px; margin :12px 0;">
+							<li>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</li>
+							<li>还剩422件</li>
+						</ul>
+						<div class="price">
+							<p class="xsj">限时价<span class="curPrice">￥118.3</span></p>
+							<p class="yj">原价<span class="oriPrice">￥169</span></p>
+						</div>
+						<div id="buyBtn">立即抢购</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-picture">
+						<img src="./images/flg.png" alt="">
+					</div>
+					<div class="item-info">
+						<div class="font16 ellipsis">网易制造珐琅锅 网易制造珐琅锅 网易制造珐琅锅</div>
+						<p>网易制造珐琅锅</p>
+						<ul style="text-align: center; height: 10px; line-height: 10px; margin :12px 0;">
+							<li>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</li>
+							<li>还剩422件</li>
+						</ul>
+						<div class="price">
+							<p class="xsj">限时价<span class="curPrice">￥118.3</span></p>
+							<p class="yj">原价<span class="oriPrice">￥169</span></p>
+						</div>
+						<div id="buyBtn">立即抢购</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-picture">
+						<img src="./images/xfb.png" alt="">
+					</div>
+					<div class="item-info">
+						<div class="font16 ellipsis">流苏小方包 流苏小方包 流苏小方包</div>
+						<p>流苏小方包</p>
+						<ul style="text-align: center; height: 10px; line-height: 10px; margin :12px 0;">
+							<li>
+								<div class="progress">
+									<div class="progress-bar"></div>
+								</div>
+							</li>
+							<li>还剩422件</li>
+						</ul>
+						<div class="price">
+							<p class="xsj">限时价<span class="curPrice">￥118.3</span></p>
+							<p class="yj">原价<span class="oriPrice">￥169</span></p>
+						</div>
+						<div id="buyBtn">立即抢购</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

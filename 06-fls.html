@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>福利社</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+	<style>
+.w{
+	width: 1090px;
+	margin: 0 auto;
+}
+*{
+	box-sizing: border-box;
+}
+#buyBtn{
+    display: block;
+    width: 118px;
+    height: 31px;
+    /*margin-top: 18px;*/
+    line-height: 31px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #be4141;
+    color: #ffffff;
+}
+.w::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.commonHeader{
+	margin: 20px 0;
+}
+.commonHeader h1{
+    line-height: 30px;
+    float: left;
+}
+.commonHeader > h1:hover{
+	color: #b4a078;
+}
+.commonHeader::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.allBtn{
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+}
+.allBtn:hover{
+	color: #b4a078;
+}
+
+
+.fulishe{
+	background-color: #F4F0EA;
+	padding: 10px 0;
+	padding-bottom: 40px;
+}
+.manufactureList4::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList4 > li{
+	float: left;
+}
+.manufactureList4 > .ad{
+	width: 225px;
+	height: 376px;
+	float: left;
+	background-size: cover;
+}
+.manufactureList4 > .manufacture{
+    width: 624px;
+    height: 376px;
+    padding: 0 17px 0 19px;
+    background-color: #FFFFFF;
+    /*margin-top: 2px;*/
+    border-right: 1px solid #F4F0EA;
+}
+.manufactureList4 >.tunhuo{
+	width: 240px;
+    height: 188px;
+    padding: 19px 20px 0 22px;
+    /*margin-top: 2px;*/
+    background-color: #fff;
+}
+.manufactureList4 >.tunhuo > ul > li *{
+	float: left;
+}
+.manufactureList4 >.tunhuo > ul > li{
+	position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.manufactureList4 >.tunhuo > ul > li::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList4 >.tunhuo > ul > li .img{
+	float: left;
+}
+.manufactureList4 >.tunhuo > ul > li img{
+	background-color: #F4F0EA;
+}
+.manufactureList4 >.tunhuo > ul > li .imginfo{
+	margin: 2px;
+	padding: 0 10px;
+	width: 130px;
+
+}
+.manufactureList4 >.tunhuo > ul > li .imginfo > .cart{
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background-color: #FBF9F6;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #CCC;
+}
+.manufactureList4 >.tunhuo > ul > li .imginfo .name{
+	color: #333;
+	width: 130px;
+
+}
+.manufactureList4 >.tunhuo > ul > li .imginfo .price{
+	color: #BE4141;
+	margin-top: 10px;
+}
+.manufactureList4 > .manufacture .header{
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0;
+	border-bottom: 1px solid #F4F0EA;
+}
+.manufactureList4 .header::after{
+	content: "";
+	display: block;
+	clear: both;	
+}
+.manufactureList4 .header > .h1{
+	float: left;
+	font-size: 16px;
+	line-height: 24px;
+	height: 24px;
+}
+.manufactureList4 > .manufacture > .spePro{
+	margin-top: 20px;
+	margin-right: -20px;
+	box-sizing: border-box;
+	width: 608px;
+}
+.manufactureList4 > .manufacture > .spePro::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList4 > .manufacture > .spePro > li{
+	margin-bottom: 20px;
+	float: left;
+}
+.manufactureList4 > .manufacture > .spePro > li:nth-child(1),
+.manufactureList4 > .manufacture > .spePro > li:nth-child(3){
+	margin-right: 20px;
+}
+.manufactureList4 > .manufacture > .spePro > li > .img{
+	background-color: #FBF9F6;
+	width: 130px;
+	height: 130px;
+	position: relative;
+	padding-right: 10px;
+}
+.discounter{
+	background-color: #F78D33;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	z-index: 9;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #fff;
+}
+.manufactureList4 > .manufacture > .spePro > li > *{
+	float: left;
+}
+.manufactureList4 > .manufacture > .spePro > li::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info{
+	text-align: left;
+	/*position: relative;*/
+	padding: 0 5px;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info > .name{
+    max-width: 130px;
+    max-height: 40px;
+    overflow: hidden;
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info > .curPrice{
+	color: #BE4141;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info > .curPrice > .curprice{
+	font-size: 20px;
+	font-weight: 700;
+	vertical-align: -2px;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info > .oriPrice{
+	color: #A4A4A4;
+}
+.manufactureList4 > .manufacture > .spePro > li > .info > .oriPrice > .oriprice{
+    text-decoration: line-through;
+}
+.ellipsis{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+</style>
+</head>
+<body>
+	<div class="fulishe">
+		<div class="w">
+			<div class="commonHeader">
+				<h1 href="">福利社</h1>
+				<p class="allBtn">查看更多福利 &gt; </p>
+			</div>
+			<ul class="manufactureList4">
+				<li class="ad" style="background: url(./images/fls-ad.png) no-repeat center;"></li>
+				<li class="manufacture">
+					<div class="header">
+						<p class="h1">今日特价</p>
+						<p href="#" class="allBtn">查看全部 &gt; </p>
+					</div>
+					<ul class="spePro">
+							<li>
+								<div class="img">
+									<img src="./images/shoutibao.png" alt="">
+									<div class="discounter">7折</div>
+								</div>
+								<div class="info">
+									<div class="name">牛皮方形锁扣手提包</div>
+									<div class="curPrice">限时价￥<span class="curprice">349</span></div>
+									<div class="oriPrice">原价<span class="oriprice">￥499</span></div>
+									<div id="buyBtn">立即抢购</div>
+								</div>
+							</li>
+							<li>
+								<div class="img">
+									<img src="./images/cansibei.png" alt="">
+									<div class="discounter">9折</div>
+								</div>
+								<div class="info">
+									<div class="name">牛皮方形锁扣手提包</div>
+									<div class="curPrice">限时价￥<span class="curprice">349</span></div>
+									<div class="oriPrice">原价<span class="oriprice">￥499</span></div>
+									<div id="buyBtn">立即抢购</div>
+								</div>								
+							</li>
+							<li>
+								<div class="img">
+									<img src="./images/ruanbaochuang.png" alt="">
+									<div class="discounter">9.5折</div>
+								</div>
+								<div class="info">
+									<div class="name">牛皮方形锁扣手提包</div>
+									<div class="curPrice">限时价￥<span class="curprice">349</span></div>
+									<div class="oriPrice">原价<span class="oriprice">￥499</span></div>
+									<div id="buyBtn">立即抢购</div>
+								</div>								
+							</li>
+							<li>
+								<div class="img">
+									<img src="./images/runhuayou.png" alt="">
+									<div class="discounter">8.5折</div>
+								</div>
+								<div class="info">
+									<div class="name">牛皮方形锁扣手提包</div>
+									<div class="curPrice">限时价￥<span class="curprice">349</span></div>
+									<div class="oriPrice">原价<span class="oriprice">￥499</span></div>
+									<div id="buyBtn">立即抢购</div>
+								</div>								
+							</li>
+					</ul>
+				</li>
+				<li class="tunhuo">
+					<div class="header">
+						<p class="h1">量贩囤货</p>
+						<p href="#" class="allBtn">全部 &gt; </p>
+					</div>
+					<ul>
+						<li>
+							<div class="img">
+								<img src="./images/mianzhishenghuo.png" alt="" >
+							</div>
+							<div class="imginfo">
+								<div class="name ellipsis">棉质生活 婴儿纯棉 棉质生活 婴儿纯棉</div>
+								<div class="price">￥69</div>
+								<div class="cart">
+									<div fa fa-cart-plus></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="./images/dayijia.png" alt="" >
+							</div>
+							<div class="imginfo">
+								<div class="name ellipsis">防滑大衣架</div>
+								<div class="price">￥17.9</div>
+								<div class="cart">
+									<div fa fa-cart-plus></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="tunhuo">
+					<div class="header">
+						<p class="h1">今日APP价</p>
+						<p href="#" class="allBtn">全部 &gt; </p>
+					</div>
+					<ul>
+						<li>
+							<div class="img">
+								<img src="./images/mianzhishenghuo.png" alt="" >
+							</div>
+							<div class="imginfo">
+								<div class="name ellipsis">棉质生活 婴儿纯棉 棉质生活 婴儿纯棉</div>
+								<div class="price">￥69</div>
+								<div class="cart">
+									<div fa fa-cart-plus></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="./images/dayijia.png" alt="" >
+							</div>
+							<div class="imginfo">
+								<div class="name ellipsis">防滑大衣架</div>
+								<div class="price">￥17.9</div>
+								<div class="cart">
+									<div fa fa-cart-plus></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

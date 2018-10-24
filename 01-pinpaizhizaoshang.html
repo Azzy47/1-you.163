@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>悬浮放大</title>
+	<style>
+	li{
+		list-style: none;
+	}
+	.manufactureList::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.manufactureList > li{
+		height: 320px;
+		width: 360px;
+		float: left;
+		margin-right: 5px;
+		overflow: hidden;
+		cursor: pointer;
+		position: relative;
+	}
+	.manufactureList > li ::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.manufactureList > li > img{
+		width: 100%;
+		transition: transform 1s;
+	}
+	.manufactureList > li:hover > img{
+		transform: scale(1.1);
+	}
+	.manufactureList > li:nth-child(1){
+		/*background-color: #f5efec;*/
+	}
+	.manufactureList > li:nth-child(2){
+		background-color: #f3fafb;
+	}
+	.manufactureList > li:nth-child(3){
+		margin-right: 0;
+		background-color: #e6f0ec;
+	}
+	.manufactureList > li > .description {
+			font-size: 18px;
+			position: absolute;
+			right: 50%;
+			color: #666;
+			top:25%;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<div class="products">
+			<!-- <div class="commonHeader">
+					<a href="">品牌制造商</a>
+					<small class="frontName">工厂直达消费者，剔除品牌溢价</small>
+			</div> -->
+			<ul class="manufactureList">
+				<li>
+					<div class="description">网易制造</div>
+					<img src="./images/chair.png">
+				</li>
+				<li>
+					
+				</li>
+				<li>
+				</li>
+			</ul>
+		</div>
+</body>
+</html>
